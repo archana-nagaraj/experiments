@@ -10,8 +10,8 @@ import logging
 
 # CRITICAL: A serious error, indicating that the program itself may be unable to continue running.
 
-#logging.basicConfig(filename='test.log', level=logging.DEBUG,
- #                   format='%(asctime)s:%(levelname)s:%(message)s')
+logging.basicConfig(filename='test.log', level=logging.DEBUG,
+                  format='%(asctime)s:%(levelname)s:%(message)s')
 
 
 def add(x, y):
@@ -23,3 +23,6 @@ num2 = 20
 
 add_result = add(num1, num2)
 logging.warning('Add: {} + {} = {}'.format(num1,num2, add_result))
+
+
+
