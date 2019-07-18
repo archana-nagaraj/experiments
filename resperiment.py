@@ -43,7 +43,6 @@ def readbody():
     print(str(message))
     return str(message)
 
-
 @app.route('/post/<int:post_id>')
 def show_post(post_id):
   #returns the post, the post_id should be an int
